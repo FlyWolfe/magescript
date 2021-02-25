@@ -133,6 +133,7 @@ StyleCopReport.xml
 *.vcxproj
 *.vcxproj.filters
 *.vcxproj.user
+*.rc
 
 # Chutzpah Test files
 _Chutzpah*
