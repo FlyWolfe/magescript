@@ -1,0 +1,39 @@
+﻿# Import different libraries of code
+import "lights"
+import "touchpad"
+import "random"
+
+# The entrypoint for everything. Called via Start()
+function Start()
+    lights.SetColour(255, 255, 255)
+    Run()
+end
+
+# Repeaters repeat every tick without needing to be called over and over again
+repeater Run()
+    if touchpad.TappedNext() then
+        lights.SetColour(random.Integer(255), random.Integer(255), random.Integer(255))
+    else if toucpad.Looping() then
+        var value = lights.GetLuminosity()
+        int nextValue = lights.GetLoopDirection() + value
+        lights.SetLuminosity(nextValue)
+    else
+        lights.SetOn(!lights.IsOn())
+    end
+    
+    if ShouldEnd() then
+        exit
+    end
+end
+
+# This function retrieves a value, but not all functions have to
+function ShouldEnd()
+    if touchpad.TappedStop() then
+        return true
+    else
+        return false
+    end
+end
+
+# Start the program
+Start()

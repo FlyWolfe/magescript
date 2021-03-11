@@ -1,0 +1,18 @@
+﻿Imperative language
+Dynamic typing
+Mainly used for small-mid programs. Focus on speed of deployment
+Readability > performance
+Similar to Lua
+Executable on Windows and Linux (MacOS a potential)
+Probably no metaprogramming?
+Interpreted by interpreter written in C++
+Also able to be compiled so it runs very quickly
+Visual scripting program
+Hot reloading for IDEs
+Garbage Collection
+Profiler (Analyzes your code's execution to tell you what is taking the most time 	and resources)
+General Orientation - Can be object oriented, but is flexible
+
+
+Things Mat Wants:
+Used for voxel-based Game Engine that I will create in the future, so needs to be 		performant and easy to use
