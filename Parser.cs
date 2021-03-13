@@ -8,18 +8,18 @@ namespace magelang
     class Parser
     {
         static TokenList tokens;
-        // TODO: static Block currentBlock;
-        // TODO: static Stack<Block> blockstack;
-        // TODO: static List<Stmt> tree;
+        static Block currentBlock;
+        static Stack<Block> blockstack;
+        static List<Statement> actionTree;
         static bool running;
 
         public Parser(TokenList t)
         {
             tokens = t;
-            // TODO: currentBlock = null;
-            // TODO: blockstack = new Stack<Block>();
+            currentBlock = null;
+            blockstack = new Stack<Block>();
             Token tok = null;
-            // TODO: tree = new List<Stmt>();
+            actionTree = new List<Statement>();
             running = true;
 
             while (running)

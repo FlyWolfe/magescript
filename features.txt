@@ -10,9 +10,9 @@ Also able to be compiled so it runs very quickly
 Visual scripting program
 Hot reloading for IDEs
 Garbage Collection
-Profiler (Analyzes your code's execution to tell you what is taking the most time 	and resources)
+Profiler (Analyzes your code's execution to tell you what is taking the most time and resources)
 General Orientation - Can be object oriented, but is flexible
 
 
 Things Mat Wants:
-Used for voxel-based Game Engine that I will create in the future, so needs to be 		performant and easy to use
+Used for voxel-based Game Engine that I will create in the future, so needs to be performant and easy to use
