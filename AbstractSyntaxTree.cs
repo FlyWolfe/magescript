@@ -27,9 +27,7 @@ namespace magelang
         doubleEqual = 5,
         notEqual = 6,
         leftParen = 7,
-        rightParen = 8,
-        leftBrace = 9,
-        rightbrace = 10
+        rightParen = 8
     }
 
     /// <summary>
@@ -154,7 +152,7 @@ namespace magelang
             this.args = args;
         }
     }
-    
+
     /// <summary>
     /// Return statement. Stores the expression to be returned from a function
     /// </summary>

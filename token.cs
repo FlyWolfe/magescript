@@ -32,12 +32,12 @@ namespace magelang
             NotEqual =          19,
             LeftParen =         20,
             RightParen =        21,
-            LeftBrace =         22,
-            RightBrace =        23,
+            Then =              22,
+            End =               23,
             Comma =             24,
             Period =            25,
             EOF =               26,
-            Identifier =        27 // Used for 
+            Identifier =        27
             // TODO: Hexadecimal, etc.
         }
 
