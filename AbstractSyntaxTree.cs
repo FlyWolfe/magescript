@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace magelang
+namespace Mirth.MageLang
 {
     /// <summary>
     /// Super class for statements (function blocks, if blocks, variable assignments, etc.)

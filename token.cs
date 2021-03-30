@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace magelang
+namespace Mirth.MageLang
 {
     /// <summary>
     /// Links a token type to its string representation

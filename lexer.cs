@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-namespace magelang
+namespace Mirth.MageLang
 {
     /// <summary>
     /// Converts a string of characters into a list of tokens
@@ -49,8 +49,6 @@ namespace magelang
             m_Tokens.Add(Token.TokenType.Equal,         "\\=");
             m_Tokens.Add(Token.TokenType.LeftParen,     "\\(");
             m_Tokens.Add(Token.TokenType.RightParen,    "\\)");
-            m_Tokens.Add(Token.TokenType.LeftBrace,     "\\{");
-            m_Tokens.Add(Token.TokenType.RightBrace,    "\\}");
             m_Tokens.Add(Token.TokenType.Comma,         "\\,");
             m_Tokens.Add(Token.TokenType.Period,        "\\.");
         }
