@@ -13,6 +13,10 @@ namespace Mirth.MageLang
         static List<Statement> actionTree;
         static bool running;
 
+        public List<Statement> ActionTree {
+            get { return actionTree; }
+        }
+
         /// <summary>
         /// Parser constructor that parses the TokenList it is given when called
         /// </summary>
@@ -55,6 +59,39 @@ namespace Mirth.MageLang
             }
 
             return value;
+        }
+
+        static Function ParseFunction()
+        {
+            string identifier = "";
+            List<string> vars = new List<string>();
+
+            if (tokens.PeekNextToken().Type == Token.TokenType.Identifier)
+            {
+                identifier = tokens.GetNextToken().Value.ToString();
+            }
+            
+            if (tokens.PeekNextToken().Type == Token.TokenType.LeftParen)
+            {
+                tokens.iterator++;
+            }
+
+            if (tokens.PeekNextToken().Type == Token.TokenType.RightParen)
+            {
+                tokens.iterator++;
+            }
+            else
+            {
+                // TODO: Implement this function
+                //vars = ParseFunctionArgs();
+            }
+
+            if (tokens.PeekNextToken().Type == Token.TokenType.RightParen)
+            {
+                tokens.iterator++;
+            }
+
+            return new Function(identifier, vars);
         }
     }
 }

@@ -8,11 +8,11 @@ namespace Mirth.MageLang
     /// <summary>
     /// Super class for statements (function blocks, if blocks, variable assignments, etc.)
     /// </summary>
-    abstract class Statement { }
+    abstract public class Statement { }
     /// <summary>
     /// Super class for expression nodes (int literals, string literals, identifiers, etc.)
     /// </summary>
-    abstract class Expression { }
+    abstract public class Expression { }
 
     /// <summary>
     /// Mathematical symbols used in conditional blocks and mathematical expressions

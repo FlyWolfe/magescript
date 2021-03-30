@@ -58,8 +58,8 @@ namespace Mirth.MageLang
     /// </summary>
     public class TokenList
     {
-        public List<Token> Tokens;
-        private int m_Iterator = 0;
+        public List<Token> Tokens { get; set; }
+        public int iterator = 0;
 
         public TokenList(List<Token> tokens)
         {
@@ -67,25 +67,25 @@ namespace Mirth.MageLang
         }
 
         /// <summary>
-        /// Returns the next token in the list and increments the m_Iterator
+        /// Returns the next token in the list and increments the iterator
         /// </summary>
         /// <returns>The next token to be loaded in</returns>
         public Token GetNextToken()
         {
             // TODO: Handle iterator outside bounds of array
-            Token ret = Tokens[m_Iterator];
-            m_Iterator++;
+            Token ret = Tokens[iterator];
+            iterator++;
             return ret;
         }
 
         /// <summary>
-        /// Returns the next token in the list without modifying the m_Iterator
+        /// Returns the next token in the list without modifying the iterator
         /// </summary>
         /// <returns>The next token to be loaded in</returns>
         public Token PeekNextToken()
         {
             // TODO: Handle iterator outside bounds of array
-            return Tokens[m_Iterator];
+            return Tokens[iterator];
         }
     }
 
